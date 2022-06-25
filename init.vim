@@ -20,9 +20,13 @@ set hidden
 set cmdheight=2
 
 call plug#begin('~/local/share/nvim/plugged')
-Plug 'nvim-telescope/telescope.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 "Plug 'junegunn/seoul256.vim'
 Plug 'gruvbox-community/gruvbox'
 call plug#end()
-
+" Vim Script
+let g:catppuccin_flavour = "frappe" " latte, frappe, macchiato, mocha
 colorscheme gruvbox
