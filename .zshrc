@@ -1,13 +1,8 @@
-alias ra='ranger'
-alias vim='nvim'
-alias vi='nvim'
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/apsanpro/.oh-my-zsh"
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # zsh theme: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
@@ -16,7 +11,7 @@ ZSH_THEME="agnoster"
 plugins=(web-search transfer macos tmux git)
 
 # Open tmux on startup, requires tmux plugin
-#ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=true
 
 # oh-my-zsh.sh sources all the *.zsh files in $ZSH_CUSTOM/custom
 # - I include: aliases.zsh, functions.zsh, prompt.zsh, ect.
@@ -104,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR='nvim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -120,3 +115,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ra='ranger'
+alias vim='nvim'
+alias vi='nvim'
+alias smpro='cd ~/Documents/smpro/'
+alias bok='cd ~/Documents/b-ok/'
+alias not='cd ~/Documents/c/'
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
