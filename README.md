@@ -1,4 +1,4 @@
-# Apsanedu/dotfiles
+# Apsanedu / dotfiles
 
 #### Nvim, Zshell, Alacritty, Tmux and more
 
