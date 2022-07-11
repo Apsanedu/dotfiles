@@ -11,7 +11,7 @@ window:
   # Startup Mode (changes require restart)
   #  startup_mode: Fullscreen
 
-# Sample Font configuration for font: Monoid.
+# Sample Font configuration 
 # Feel free to use different font configuration family & face for each sections
 font:
   # Normal font face - Also used to draw glyphs on tmux & VIM
