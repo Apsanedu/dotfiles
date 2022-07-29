@@ -125,6 +125,8 @@ alias vi='nvim'
 alias so='cd ~/Documents/smpro/'
 alias vu='cd ~/Documents/smpro/learning\ vue'
 
+#Good world
+
 alias bok='cd ~/Documents/b-ok/'
 alias not='cd ~/Documents/c/'
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
