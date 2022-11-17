@@ -1,18 +1,24 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/apsanpro/.oh-my-zsh"
 export EDITOR='nvim'
 export VISUAL='nvim'
 
+set -o vi
+
 # zsh theme: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="agnoster"
-ZSH_THEME="amuse"
+ZSH_THEME="agnoster"
 
 # omz plugins
-plugins=(web-search transfer macos tmux git)
+plugins=(transfer macos tmux git)
 
 # Open tmux on startup, requires tmux plugin
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=true
 
 # oh-my-zsh.sh sources all the *.zsh files in $ZSH_CUSTOM/custom
 # - I include: aliases.zsh, functions.zsh, prompt.zsh, ect.
@@ -25,7 +31,7 @@ source $ZSH/oh-my-zsh.sh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,8 +114,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Good world
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -119,10 +123,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ra='ranger'
-alias vim='nvim'
+alias v='nvim'
 alias vi='nvim'
-alias smpro='cd ~/Documents/smpro/'
+alias so='cd ~/Documents/smpro/'
+alias vu='cd ~/Documents/smpro/learning\ vue'
+
 alias bok='cd ~/Documents/b-ok/'
+alias mu='cd ~/Documents/m/'
 alias not='cd ~/Documents/c/'
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
