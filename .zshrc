@@ -11,7 +11,7 @@ export VISUAL='nvim'
 set -o vi
 
 # zsh theme: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="mikeh"
 
 # omz plugins
 plugins=(transfer macos tmux git)
